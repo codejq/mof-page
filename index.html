@@ -781,6 +781,53 @@
     </div>
 
 
+    <div class="row">
+      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+          <div class="counter-container text-center">
+              <p class="counter-count">140</p>
+              <p class="counter-p">دورات منفذه</p>
+          </div>
+      </div>
+
+      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+          <div class="counter-container text-center">
+              <p class="counter-count">661</p>
+              <p class="counter-p"> ايام تدريبية</p>
+          </div>
+      </div>
+
+      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 ">
+          <div class="counter-container text-center">
+              <p class="counter-count">3037</p>
+              <p class="counter-p">اجمالي المتدربين</p>
+          </div>
+      </div>
+
+      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+          <div class="counter-container text-center ">
+              <p class="counter-count">500</p>
+              <p class="counter-p">جهات مستهدفه لـ 2023</p>
+          </div>
+      </div>
+      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+        <div class="counter-container text-center ">
+            <p class="counter-count">4000</p>
+            <p class="counter-p">المتدربين حضورياً	لـ 2023</p>
+        </div>
+    </div>
+
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+      <div class="counter-container text-center ">
+          <p class="counter-count">15000</p>
+          <p class="counter-p">المتدربين اونلاين	 لـ 2023</p>
+      </div>
+  </div>
+
+  </div>
+
+
+
+
     <div class="row mt-5 ms-1 ms-md-5 me-md-5">
       <hr>
       <h1 class="text-center" >
@@ -1001,6 +1048,22 @@
           }, 1000);
         }
       }
+
+
+      $('.counter-count').each(function () {
+        $(this).prop('Counter',0).animate({
+            Counter: $(this).text()
+        }, {
+            duration: 10000,
+            easing: 'swing',
+            step: function (now) {
+                $(this).text(Math.ceil(now));
+            }
+        });
+    });
+
+
+
     });
       //# sourceURL=pen.js
   </script>
