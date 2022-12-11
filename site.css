@@ -23,3 +23,15 @@
   margin: 0 !important;
 
 }
+
+@media only screen and (max-width: 768px) {
+  .flip-clock-wrapper ul {
+    width: 20px !important;
+    margin: 2PX !important;
+  }
+  .flip-clock-divider .flip-clock-label {
+    right: -44px !important;
+  }
+
+
+}
